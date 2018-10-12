@@ -16,7 +16,8 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 1
-  skip: true  # [win32]
+  # r-stanarm not available on win
+  skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
