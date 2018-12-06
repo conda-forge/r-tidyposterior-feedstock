@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyposterior_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyposterior/tidyposterior_{{ version }}.tar.gz
-  sha256: a270840ca2525e2099ebda0d7d78b3d5bad415ad467060e26ff0622ea7910227
+  sha256: 3a8b32607ba38771992e17f16a9ea188e8d95386fe1363bcf4585ae64756abe9
 
 build:
   merge_build_host: True  # [win]
