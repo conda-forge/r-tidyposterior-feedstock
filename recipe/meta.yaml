@@ -33,9 +33,9 @@ requirements:
     - r-purrr
     - r-rlang
     - r-rsample >=0.0.2
-    - r-rstanarm >= 2.15.3
+    - r-rstanarm >=2.15.3
     - r-tibble
-    - r-tidyr >= 0.7.1
+    - r-tidyr >=0.7.1
   run:
     - r-base
     - r-broom
@@ -44,9 +44,9 @@ requirements:
     - r-purrr
     - r-rlang
     - r-rsample >=0.0.2
-    - r-rstanarm >= 2.15.3
+    - r-rstanarm >=2.15.3
     - r-tibble
-    - r-tidyr >= 0.7.1
+    - r-tidyr >=0.7.1
 
 test:
   commands:
