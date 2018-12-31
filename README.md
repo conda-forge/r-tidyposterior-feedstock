@@ -1,6 +1,8 @@
 About r-tidyposterior
 =====================
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: https://topepo.github.io/tidyposterior
 
 Package license: GPL-2
@@ -14,9 +16,8 @@ Summary: Bayesian analysis used here to answer the question: "when looking at re
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-tidyposterior-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-tidyposterior-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-tidyposterior-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-tidyposterior-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-tidyposterior-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-tidyposterior-feedstock)
 
 Current release info
 ====================
@@ -104,3 +105,14 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@bgruening](https://github.com/bgruening/)
+* [@cbrueffer](https://github.com/cbrueffer/)
+* [@daler](https://github.com/daler/)
+* [@dbast](https://github.com/dbast/)
+* [@jdblischak](https://github.com/jdblischak/)
+* [@johanneskoester](https://github.com/johanneskoester/)
+
