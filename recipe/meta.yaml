@@ -14,10 +14,10 @@ source:
   sha256: 3a8b32607ba38771992e17f16a9ea188e8d95386fe1363bcf4585ae64756abe9
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 2000
   # r-stanarm not available on win
-  skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -64,8 +64,7 @@ about:
     comparisons between models. The methods included here are similar to Benavoli et
     al (2017) <http://jmlr.org/papers/v18/16-305.html>.'
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
