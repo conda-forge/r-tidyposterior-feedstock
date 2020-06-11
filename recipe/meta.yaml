@@ -1,4 +1,4 @@
-{% set version = '0.0.2' %}
+{% set version = "0.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyposterior_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyposterior/tidyposterior_{{ version }}.tar.gz
-  sha256: 3a8b32607ba38771992e17f16a9ea188e8d95386fe1363bcf4585ae64756abe9
+  sha256: 0ff24ae844f2ac32f801bd655f2c439112df2ab3872a6e178edf14c001405b73
 
 build:
-  merge_build_host: True  # [win]
-  number: 2002
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,15 +54,10 @@ test:
 about:
   home: https://tidymodels.github.io/tidyposterior
   license: GPL-2
-  summary: 'Bayesian analysis used here to answer the question: "when looking at resampling results,
-    are the differences between models ''real''?" To answer this, a model can be created
-    were the performance statistic is the resampling statistics (e.g. accuracy or RMSE).
-    These values are explained by the model types. In doing this, we can get parameter
-    estimates for each model''s affect on performance and make statistical (and practical)
-    comparisons between models. The methods included here are similar to Benavoli et
-    al (2017) <http://jmlr.org/papers/v18/16-305.html>.'
+  summary: "Bayesian analysis used here to answer the question: \"when looking at resampling results, are the differences between models 'real'?\" To answer this, a model can be created were the performance statistic is the resampling statistics (e.g. accuracy or RMSE). These values are explained by the model types. In doing\
+    \ this, we can get parameter estimates for each model's affect on performance and make statistical (and practical) comparisons between models. The methods included here are similar to Benavoli et al (2017) <http://jmlr.org/papers/v18/16-305.html>."
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
