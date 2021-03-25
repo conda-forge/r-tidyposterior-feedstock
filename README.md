@@ -3,7 +3,7 @@ About r-tidyposterior
 
 Home: https://tidymodels.github.io/tidyposterior
 
-Package license: GPL-2
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidyposterior-feedstock/blob/master/LICENSE.txt)
 
