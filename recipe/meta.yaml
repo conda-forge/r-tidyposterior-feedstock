@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyposterior_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyposterior/tidyposterior_{{ version }}.tar.gz
-  sha256: 5071e3ba22305455d52bc343fdcce63aca29acf568666be09dcabc2c353126c0
+  sha256: 06b1adc7dc620a4800c8c99f6cbf3a9e38c57c1c78a20519eb259e4020f49ea5
 
 build:
   merge_build_host: true  # [win]
