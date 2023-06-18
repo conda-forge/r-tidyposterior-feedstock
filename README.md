@@ -1,11 +1,11 @@
-About r-tidyposterior
-=====================
+About r-tidyposterior-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidyposterior-feedstock/blob/main/LICENSE.txt)
 
 Home: https://tidymodels.github.io/tidyposterior
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidyposterior-feedstock/blob/main/LICENSE.txt)
 
 Summary: Bayesian analysis used here to answer the question: "when looking at resampling results, are the differences between models 'real'?" To answer this, a model can be created were the performance statistic is the resampling statistics (e.g. accuracy or RMSE). These values are explained by the model types. In doing this, we can get parameter estimates for each model's affect on performance and make statistical (and practical) comparisons between models. The methods included here are similar to Benavoli et al (2017) <http://jmlr.org/papers/v18/16-305.html>.
 
