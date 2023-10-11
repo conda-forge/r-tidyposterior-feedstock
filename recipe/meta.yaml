@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyposterior_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyposterior/tidyposterior_{{ version }}.tar.gz
-  sha256: 06b1adc7dc620a4800c8c99f6cbf3a9e38c57c1c78a20519eb259e4020f49ea5
+  sha256: 90c093f3772c0b627631540d996f175463b02c4d7681e76a1bc85cfa60bc20fa
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -60,8 +60,8 @@ test:
 about:
   home: https://tidymodels.github.io/tidyposterior
   license: MIT
-  summary: "Bayesian analysis used here to answer the question: \"when looking at resampling results, are the differences between models 'real'?\" To answer this, a model can be created were the performance statistic is the resampling statistics (e.g. accuracy or RMSE). These values are explained by the model types. In doing\
-    \ this, we can get parameter estimates for each model's affect on performance and make statistical (and practical) comparisons between models. The methods included here are similar to Benavoli et al (2017) <http://jmlr.org/papers/v18/16-305.html>."
+  summary: "Bayesian analysis used here to answer the question: \"when looking at resampling results, are the differences between models 'real'?\" To answer this, a model can be created were the performance statistic is the resampling statistics (e.g. accuracy or RMSE). These values are explained by the model types. In doing
+    this, we can get parameter estimates for each model's affect on performance and make statistical (and practical) comparisons between models. The methods included here are similar to Benavoli et al (2017) <http://jmlr.org/papers/v18/16-305.html>."
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
