@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyposterior_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyposterior/tidyposterior_{{ version }}.tar.gz
-  sha256: 90c093f3772c0b627631540d996f175463b02c4d7681e76a1bc85cfa60bc20fa
+  sha256: 0400b009939d2d527e1803f192d31ed8ffdbcc890a5931675359230cb873b2e1
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
